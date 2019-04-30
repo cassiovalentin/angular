@@ -3,13 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OlaMundoComponent } from './ola-mundo/ola-mundo.component';
+import { PainelSimplesComponent } from './painel-simples/painel-simples.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    OlaMundoComponent
-  ],
+    PainelSimplesComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule
