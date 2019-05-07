@@ -1,5 +1,7 @@
+
+<div *ngIf = "resumo">
 <app-painel-simples titulo = 'Consultas Marcadas Últimos 30 dias' col='6'>
-  <h3 class="text-center">{{resumo.consultas.consultas_30dias_anteriores}}</h3>
+  <h3 class="text-center">{{resumo.consultas.consultas_30dias_anteiores}}</h3>
 </app-painel-simples>
 
 <app-painel-simples titulo = 'Consultas Marcadas Próximos 30 dias' col='6'>
@@ -27,3 +29,4 @@
        </div>
     </div>
  </app-painel-simples>
+</div>

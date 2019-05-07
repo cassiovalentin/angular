@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-resumo',
   templateUrl: './resumo.component.html',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumoComponent implements OnInit {
 
-  resumo = {
+  resumo ;
+  /*= {
     consultas : {
       consultas_30dias_anteriores : 87,
       consultas_30dias_posteriores : 79
@@ -26,9 +27,13 @@ export class ResumoComponent implements OnInit {
       }
     }
   };
-  constructor() { }
+  */
+  constructor(private http: HttpClient) {   }
 
   ngOnInit() {
+    this.http.get('http://www.devup.com.br/php/api-dashboard/api/resumo')
+    .subscribe(dados => this.resumo = dados);
+
   }
 
 }
