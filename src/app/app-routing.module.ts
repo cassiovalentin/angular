@@ -1,7 +1,13 @@
+import { ResumoComponent } from './resumo/resumo.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ConsultaComponent } from './consulta/consulta.component';
 
-const routes: Routes = [];
+const routes = [
+  { path: 'resumo', component: ResumoComponent},
+  { path: 'consulta', component: ConsultaComponent},
+  { path: '**', redirectTo: '/resumo'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

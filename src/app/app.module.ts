@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -9,7 +10,6 @@ import { MenuLateralComponent } from './barra-navegacao/menu-lateral/menu-latera
 import { ResumoComponent } from './resumo/resumo.component';
 import { ConsultaComponent } from './consulta/consulta.component';
 import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-especialidade/consulta-por-especialidade.component';
-
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-espec
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
