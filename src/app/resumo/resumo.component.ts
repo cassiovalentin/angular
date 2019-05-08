@@ -9,7 +9,7 @@ import { ResumoService } from './resumo.service';
 export class ResumoComponent implements OnInit {
 
   resumo ;
- 
+
   constructor(private resumoService: ResumoService) {   }
 
   ngOnInit() {
