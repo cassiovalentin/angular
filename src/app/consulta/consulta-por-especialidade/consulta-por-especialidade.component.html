@@ -1,5 +1,5 @@
 <app-painel-simples tipo="primary"  titulo= "{{titulo}}" col="6">
-  <table class="table table-hover">
+  <table *ngIf ="!erro; else mensagem" class="table table-hover">
     <thead>
         <tr>
             <th>Especialidade</th>
@@ -13,4 +13,8 @@
       </tr>
     </tbody>
   </table>
+  <ng-template #mensagem>
+    <h3 class="text-center">falha na comunicação com o servidor</h3>
+
+  </ng-template>
  </app-painel-simples>

@@ -1,4 +1,17 @@
-<app-consulta-por-especialidade [consultas]="consultas.realizadas"
-titulo="Consultas Realizadas - Últimos 30 dias"></app-consulta-por-especialidade>
-<app-consulta-por-especialidade [consultas]="consultas.marcadas"
-titulo="Consultas Marcadas - Próximos 30 dias"></app-consulta-por-especialidade>
+
+
+
+
+<app-consulta-por-especialidade 
+[consultas]="consultas?.realizadas"
+titulo="Consultas Realizadas - Últimos 30 dias"
+[erro] = "erro">
+</app-consulta-por-especialidade>
+
+<app-consulta-por-especialidade
+ [consultas]="consultas?.marcadas"
+titulo="Consultas Marcadas - Próximos 30 dias"
+[erro] = "erro">
+</app-consulta-por-especialidade>
+
+
