@@ -12,7 +12,7 @@ faturamentoInscricao;
   constructor(private faturamentoService: FaturamentoService) { }
 
   ngOnInit() {
-    this.faturamentoService.getFaturamento()
+   this.faturamentoInscricao = this.faturamentoService.getFaturamento()
     .subscribe(dados => this.faturamento = dados);
   }
   // tslint:disable-next-line:use-life-cycle-interface

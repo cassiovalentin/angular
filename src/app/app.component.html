@@ -1,7 +1,7 @@
-<app-barra-navegacao></app-barra-navegacao>
+<app-barra-navegacao (onToggle)="menuLateral.toggle()"></app-barra-navegacao>
 
 <div class="main">
-    <app-menu-lateral></app-menu-lateral>
+    <app-menu-lateral #menuLateral></app-menu-lateral>
     <div class="content">
      <router-outlet></router-outlet>
     </div>
